@@ -28,7 +28,7 @@ function App() {
   return (
     <div>
       <section className="banner">
-      <img src="/public/238256.jpg" alt="" />
+      <img src="/238256.jpg" alt="" />
       </section>      
       <form onSubmit={handleSubmit}>
         <input ref={inputSearch} type="text" />
