@@ -28,9 +28,8 @@ function App() {
   return (
     <div>
       <section className="banner">
-      <img src="/public/images.jpeg" alt="" />
-      </section>
-      <h1>Rick and Morty app</h1>
+      <img src="/public/238256.jpg" alt="" />
+      </section>      
       <form onSubmit={handleSubmit}>
         <input ref={inputSearch} type="text" />
         <button>Search</button>
@@ -43,7 +42,7 @@ function App() {
           <LocationInfo
             location={location}
           />
-          <div>
+          <div className='principal'>
             {
               location?.residents.map(url => (
                 <ResidentCard 

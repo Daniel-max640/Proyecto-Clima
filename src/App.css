@@ -1,32 +1,77 @@
 /* Estilos para la sección del banner */
 html {
-
-    background-color: #072226
+    background-color: #021f24
 }
-.banner {
-    background-color: #072226; /* Color de fondo para la sección */
-    padding: 20px; /* Espaciado interno para el contenido del banner */
-    text-align: center; /* Centra el contenido horizontalmente en la sección */
+
+
+
+.banner img{
+  max-width: 100%;
+  max-height: 550px;
+  }
+ 
+ form {
+    border: 1px transparent #ccc;
+    background-color: rgb(2, 29, 59);
+    padding: 15px 15px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 25px auto;
+    text-align: center;
+ }
+
+ 
+  .principio {   
+    border: 1px transparent #ccc;
+    background-color: rgb(2, 29, 59);
+    padding: 15px 15px;
+    border-radius: 10px;
+    max-width: 550px;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .principio .list .princi {
+    font-weight: 900;
+  }
+
+ .principio .list {
+    display: grid; /* Utiliza Grid para el contenido */
+    grid-template-columns: repeat(3, 1fr); /* Divide el contenido en dos columnas */
+    color: #ccc;
+   
+  }
+
+  .principio .list .titulo {
+    display: grid; /* Utiliza Grid para el contenido */
+    grid-template-columns: repeat(1, 1fr); /* Divide el contenido en dos columnas */
+    color: #ccc;
+    font-weight: 300;  
+  }
+
+  .principal {
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: center;
+    text-align: center;
+    
   }
   
-  /* Estilos para la imagen del banner */
-  .banner-image {
-    max-width: 100%;
-    height: 150px;
-    display: block;
-    margin: 0 auto;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-  }
-
 .resident {
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px; /* Agrega margen derecho para separar las tarjetas horizontalmente */
+    margin-bottom: 10px; /* Agrega margen inferior para separar las tarjetas verticalmente */
     width: 100%;
     max-width: 300px;
-    background-color: #072226;
+    background-color: rgb(2, 29, 59);
     color: white;
     border-radius: 1em;
     overflow: hidden;/*todo lo que sobresalga de la cards se va a acortar*/ 
     transition: transform 100ms ease;
+    display: inline-block;
+   
+   
 }
 .resident:hover {
     transform: scale(1.03);
@@ -39,7 +84,7 @@ html {
 .resident_status {
     position: absolute;
     top: 2.5em;
-    background-color: #072226;
+    background-color: hsl(187, 85%, 10%);
     width: 35%;
     padding: 0.3em 0.7em;
     border-radius: 0 0.5em 0.5em 0;
@@ -83,6 +128,7 @@ html {
 .resident_list {
     display: grid;
     gap: 0.7em;
+    text-align: left;
 }
 
 .resident_item {
@@ -95,4 +141,27 @@ html {
     padding-left: 1em;
     color: #aaa;
 }
+ h2 {
+    padding: 15px;
+    color: darkorange;
+ }
+ button 
+{
+    background-color: darkorange;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-color: transparent;
+}
+
+
+@media (max-width: 768px) {
+    .principio {
+        max-width: 90%; /* Reducir el ancho máximo en pantallas más pequeñas */
+        margin: 10px auto; /* Centrar el elemento en la pantalla */
+      }
+    
+      .principio .list {
+        grid-template-columns: repeat(1, 1fr); /* Una sola columna en pantallas pequeñas */
+      }
+  }
 
